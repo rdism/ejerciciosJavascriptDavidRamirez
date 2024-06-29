@@ -51,6 +51,16 @@ for (let i = 5; i <= Math.sqrt(numero); i+=6) {
     
 };
 
+// 7. Dado un array de 10 numeros, realizar un programa que muestre por consola el
+// doble de cada uno de los elementos.
+
+let numeros;
+numeros = [23, 418, 0, 609, 124, 872, 129, 444, 726, 901];
+
+for (let i = 0; i < numeros.length; i++) {
+    console.log(numeros[i] * 2);
+}
+
 // 8. Dado un array con al menos 5 objetos comprendidos por un grupo familiar, cada
 // objeto representa a 1 persona con al menos 4 propiedades, realizar un programa
 // que muestre un mensaje de presentacion por cada elemento del array.

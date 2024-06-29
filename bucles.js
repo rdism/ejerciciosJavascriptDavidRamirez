@@ -51,6 +51,17 @@ for (let i = 5; i <= Math.sqrt(numero); i+=6) {
     
 };
 
+// 5. Realizar un programa que permita dado un numero, mostrar todos sus divisores.
+
+let numero = 79;
+
+console.log(`Los divisores de ${numero} son:`);
+for (let i = 1; i <= numero; i++) {
+    if (numero % i === 0) {
+        console.log(i);
+    }
+}
+
 // 6. Dado un array de 10 elementos, realizar un programa que recorra ese array y
 // muestre un mensaje por consola con cada uno de los elementos del array
 

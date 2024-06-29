@@ -51,6 +51,16 @@ for (let i = 5; i <= Math.sqrt(numero); i+=6) {
     
 };
 
+// 6. Dado un array de 10 elementos, realizar un programa que recorra ese array y
+// muestre un mensaje por consola con cada uno de los elementos del array
+
+let numeros;
+numeros = [23, 418, 0, 609, 124, 872, 129, 444, 726, 901];
+
+for (let i = 0; i < numeros.length; i++) {
+    console.log(numeros[i]);
+}
+
 // 7. Dado un array de 10 numeros, realizar un programa que muestre por consola el
 // doble de cada uno de los elementos.
 

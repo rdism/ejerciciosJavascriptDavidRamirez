@@ -1,0 +1,26 @@
+#nuevaNota {
+    /* width: 600px;
+    height: 400px; */
+    margin: 20px;
+    display: flex;
+    /* border: 1px solid black; */
+    flex-direction: row;
+}
+
+#nuevaNotaInput {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+}
+
+#nuevaNotaButtons {
+    margin-top: 20px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+}
+
+.container {
+    border: 1px solid red;
+}

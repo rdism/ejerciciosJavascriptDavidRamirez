@@ -105,6 +105,7 @@ document.getElementById('boton-borrar').addEventListener('click', () => {
 function marcarRealizada(id) {
     let nota = notas.find(nota => nota.id === id);
     nota.realizada = !nota.realizada;
+    actualizarFiltros();
     pintarTarjetas(notas);
 }
 
@@ -144,3 +145,5 @@ function actualizarFiltros () {
 
     pintarTarjetas(notasFiltradas)
 }
+
+actualizarFiltros();

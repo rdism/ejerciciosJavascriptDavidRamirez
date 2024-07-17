@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="ejercicio3.css">
 </head>
 
-<body>
+<body class="bg-primary">
     <div class="container-md">
         <div class="row">
             <h3>Tarjetas de anotaciones</h3>
         </div>
 
-        <div class="row col-6" id="nuevaNota">
-            <div id="nuevaNotaInput">
+        <div class="row col-6 bg-white d-flex card" id="nuevaNota">
+            <div class=" card-body d-flex flex-column" id="nuevaNotaInput">
                 <!-- <h4>Nueva nota</h4> -->
                 <div class="form-floating">
                     <input type="text" class="form-control" placeholder="Titulo" id="titulo">
@@ -33,19 +33,18 @@
                 <button class="btn btn-primary" id="boton-guardar">Guardar</button>
                 <button class="btn btn-light" id="boton-borrar">Borrar</button>
             </div>
+            <div class="form-check form-switch col-md-6">
+                <input class="form-check-input" type="checkbox" role="switch" id="filtro-realizadas">
+                <label class="form-check-label" for="filtro-realizadas">Mostrar solo realizadas</label>
+                <input type="text" id="filtro-texto" placeholder="Buscar por texto">
+            </div>
         </div>
 
 
-        <div class="form-check form-switch col-md-6">
-            <input class="form-check-input" type="checkbox" role="switch" id="filtro-realizadas">
-            <label class="form-check-label" for="filtro-realizadas">Mostrar solo realizadas</label>
-            <input type="text" id="filtro-texto" placeholder="Buscar por texto">
-        </div>
 
 
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 card-deck" id="contenedortarjetas">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 card-deck" id="contenedortarjetas"></div>
 
-        </div>
     </div>
 
 

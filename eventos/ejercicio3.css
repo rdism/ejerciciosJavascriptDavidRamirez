@@ -1,16 +1,9 @@
-#nuevaNota {
-    /* width: 600px;
-    height: 400px; */
-    margin: 20px;
-    display: flex;
-    /* border: 1px solid black; */
-    flex-direction: row;
+h3 {
+    color: white;
 }
 
-#nuevaNotaInput {
-    display: flex;
-    flex-direction: column;
-    width: 380px;
+#NN {
+    color: white;
 }
 
 #nuevaNotaButtons {

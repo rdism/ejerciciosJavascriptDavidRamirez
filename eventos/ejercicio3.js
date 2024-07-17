@@ -50,7 +50,7 @@ function pintarTarjetas(notas) {
     contenedor.innerHTML = notas.length !== 0 ? '' : "<p id='NN'>NO HAY NOTAS PARA MOSTRAR</p>";
     for (let i = 0; i < notas.length; i++) {
         let tarjeta = document.createElement("div");
-        tarjeta.className = "card col";
+        tarjeta.className = "card col m-2";
         tarjeta.innerHTML = `
              <div class="card-body d-flex flex-column ">
                 <div class="d-flex justify-content-start align-items-center">
@@ -84,7 +84,8 @@ guardarNuevaNota.addEventListener("click", () => {
     let texto = document.getElementById("texto").value;
     if (titulo !== "" && texto !== "") {
         agregarNota(titulo, texto);
-        document.getElementById("titulo").value = "";
+        document.getElementById('titulo').value = '';
+        document.getElementById('texto').value = '';
         pintarTarjetas(notas);
     }
 });
@@ -96,7 +97,7 @@ function borrarNota(id) {
 }
 
 
-document.getElementById('boton-borrar').addEventListener('click', function () {
+document.getElementById('boton-borrar').addEventListener('click', () => {
     document.getElementById('titulo').value = '';
     document.getElementById('texto').value = '';
 });
